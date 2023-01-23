@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Add product</title>
+</head>
+<body>
+    <!-- STRUCTURE FOR RESPONSIVE MORE THAN 992px SIZE OF SCREEN -->
+    <div class="row">
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+            <!-- Navigation -->
+            <nav>
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6" id="navLeftBox">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <!-- navbar notification -->
+                                <div class="dropdown navDrop">
+                                    <button class="btn btn-primary dropdown-toggle" id="navNotif" type="button" data-toggle="dropdown">
+                                        <span class="badge badge-danger">۱۵</span>
+                                        <img src="./img/bell-icon.png" alt="bell-icon">
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item">
+                                                <p>۱۵ نوتیفیکیشن</p>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۳ دقیقه</p>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۴ پیام جدید</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۱۲ ساعت</p>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۸ درخواست دوستی</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۲ روز</p>
+                                                    </div>
+                                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                        <p>۳ گزارش جدید</p>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                مشاهده همه نوتیفیکیشن
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <!-- navbar notification -->
+                                <div class="dropdown">
+                                    <button class="btn btn-primary dropdown-toggle" id="navTime" type="button" data-toggle="dropdown">
+                                        <span class="badge badge-warning">۳</span>
+                                        <img src="./img/comments.jpg" alt="comments-icon">
+                                    </button>
+                                    <ul class="dropdown-menu" id="navList">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/avatar.png" alt="avatar">
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                        <p>user name</p>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/black-star.png" alt="black-star">
+                                                    </div>
+                                                </div>
+                                                <p>۴ ساعت قبل</p>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/avatar2.png" alt="avatar">
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <p>user name</p>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/star-gold-removebg-preview.png" alt="gold-star">
+                                                    </div>
+                                                </div>
+                                                <p>۴ ساعت قبل</p>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/avatar3.png" alt="avatar">
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <p>user name</p>
+                                                    </div>
+                                                    <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                                        <img src="./img/blue-star.png" alt="blue-star">
+                                                    </div>
+                                                </div>
+                                                <p>۴ ساعت قبل</p>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <p>مشاهده همه پیام ها</p>
+                                            </a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 navbarBox" id="navRightBox">
+                        <ul>
+                            <li>
+                                <!-- search input -->
+                                <input type="search" name="" class="searchInput" placeholder="جستجو">
+                                <button class="searchButton">
+                                    <img src="./img/search.png" alt="search-icon">
+                                </button>
+                            </li>
+                            <!-- navbar links -->
+                            <li><a href="">خانه</a></li>
+                            <li><a href="">تماس</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Content Of Add New product -->
+            <main>
+                <div id="addNewProduct">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <!-- submit buttons -->
+                            <div class="mainButtons">
+                                <button class="btn btn-success" type="submit">تایید و انتشار</button>
+                                <button class="btn btn-danger" type="submit">پیش نویس</button>
+                            </div>
+                            <!-- upload image section -->
+                            <div class="productImages">
+                                <span class="titleImage">
+                                    <img src="./img/image.png" alt="imageTitle">
+                                </span>
+                                <label>تصاویر کالا</label>
+                                <hr>
+                                <p>گالری تصاویر (اندازه تصاویر زیر 512*512 نباشد)</p>
+                                <input type="file" id="upload" hidden>
+                                <label for="upload">
+                                    <img src="./img/image-upload.jpg" alt="imageUpload">
+                                </label>
+                                <div class="text-left">
+                                    <button type="buuton" class="btn btn-success">آپلود تصویر</button>
+                                </div>
+                            </div>
+                            <!-- product price section -->
+                            <div class="productPrice">
+                                <span class="titleImage">
+                                    <img src="./img/price.png" alt="priceTitle">
+                                </span>
+                                <label>قیمت محصول + موجودی انبار فروشنده</label>
+                                <hr>
+                                <div class="price">
+                                    <label for="">قیمت</label>
+                                    <input type="text" placeholder="واحد با تومان">
+                                </div>
+                                <div class="entity">
+                                    <label for="">موجودی انبار</label>
+                                    <input type="text" name="" id="" placeholder="تعداد کالا در انبار">
+                                </div>
+                                <div class="maxHistorySale">
+                                    <label for="">حداکثر تاریخ برای تخفیف</label>
+                                    <input type="text" name="" id="" placeholder="اعتبار تخفیف">
+                                </div>
+                                <div class="sale">
+                                    <label for="">تخفیف</label>
+                                    <input type="text" name="" id="" placeholder="اعتبار مبلغ به عدد یا درصد">
+                                </div>
+                            </div>
+                            <!-- product attributes section -->
+                            <div class="productAttributes">
+                                <span class="titleImage">
+                                    <img src="./img/attrs.png" alt="attrsTitle">
+                                </span>
+                                <label>ویژگی های کالا</label>
+                                <hr>
+                                <!-- list boxs -->
+                                <div class="attribute">
+                                    <label for="">ویژگی</label>
+                                    <select class="form-control" id="">
+                                        <option>انتخاب رنگ</option>
+                                        <option>رنگ 1</option>
+                                        <option>رنگ 2</option>
+                                        <option>رنگ 3</option>
+                                    </select>
+                                </div>
+                                <div class="color">
+                                    <label for="">رنگ</label>
+                                    <select class="form-control" id="">
+                                        <option>انتخاب ویژگی محصول</option>
+                                        <option>ویژگی 1</option>
+                                        <option>ویژگی 2</option>
+                                        <option>ویژگی 3</option>
+                                    </select>
+                                </div>
+                                <div class="otherAttrs">
+                                    <label for="">سایر ویژگی (سایر)</label>
+                                    <select class="form-control" id="">
+                                        <option>درج ویژگی</option>
+                                        <option>ویژگی 1</option>
+                                        <option>ویژگی 2</option>
+                                        <option>ویژگی 3</option>
+                                    </select>
+                                </div>
+                                <p>ویژگی های این محصول را انتخاب کنید و سپس مقادیر ورودی هر ویژگی را وارد کنید</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <!-- product title -->
+                            <div class="title">
+                                <span class="titleImage">
+                                    <img src="./img/product.png" alt="productTitle">
+                                </span>
+                                <label>عنوان محصول</label>
+                                <input type="text">
+                            </div>
+                            <!-- product category -->
+                            <div class="category">
+                                <div class="form-group">
+                                    <span class="titleImage">
+                                        <img src="./img/category.png" alt="categoryTitle">
+                                    </span>
+                                    <label for="category">انتخاب دسته بندی</label>
+                                    <select class="form-control" id="category">
+                                        <option>انتخاب دسته بندی</option>
+                                        <option>دسته بندی 1</option>
+                                        <option>دسته بندی 2</option>
+                                        <option>دسته بندی 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- product brands -->
+                            <div class="brands">
+                                <span class="titleImage">
+                                    <img src="./img/brand.png" alt="brandTitle">
+                                </span>
+                                <label for="brands">انتخاب برند</label>
+                                <div class="form-group">
+                                    <select class="form-control" id="brands">
+                                        <option>انتخاب برند</option>
+                                        <option>برند 1</option>
+                                        <option>برند 2</option>
+                                        <option>برند 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- product weight -->
+                            <div class="weight">
+                                <span class="titleImage">
+                                    <img src="./img/weight.png" alt="weightTitle">
+                                </span>
+                                <label for="">وزن (گرم)</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <!-- product entites -->
+                            <div class="enitity">
+                                <span class="titleImage">
+                                    <img src="./img/numbers.png" alt="entityTitle">
+                                </span>
+                                <label>موجودی انبار</label>
+                                <input type="text">
+                            </div>
+                            <!-- product labels section -->
+                            <div class="labels">
+                                <span class="titleImage">
+                                    <img src="./img/brand.png" alt="brandsTitle">
+                                </span>
+                                <label for="labels">برچسب ها</label>
+                                <input type="text" name="labels" id="">
+                            </div>
+                            <!-- return product section -->
+                            <div class="returnProduct">
+                                <span>امکان بازگشت کالا</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="transportaionSets">
+                                <span class="titleImage">
+                                    <img src="./img/transportation.png" alt="transportationTitle">
+                                </span>
+                                <label>تنظیمات حمل و نقل</label>
+                                <hr>
+                                <div class="freeTransportation">
+                                    <span>حمل و نقل رایگان</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="fixedCost">
+                                    <span id="fixedLabel">کرایه ثابت</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="fixedCostInput">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="transportaionCost">
+                                    <label for="transportaionCost">هزینه حمل و نقل</label>
+                                    <input type="text" name="tranportaionCost" id="">
+                                </div>
+                            </div>
+                            <div class="lowEntityWarning">
+                                <span class="titleImage">
+                                    <img src="./img/warning.png" alt="warningTitle">
+                                </span>
+                                <label>اخطار کم بودن موجودی</label>
+                                <hr>
+                                <div class="numbers">
+                                    <label for="">تعداد</label>
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <div class="videoLink">
+                                <span class="titleImage">
+                                    <img src="./img/video.jpg" alt="videoTitle">
+                                </span>
+                                <label>لینک ویدیو</label>
+                                <input type="text" name="" id="">
+                                <p>لینک یوتیوب یا ویمو، آپارات و یا انواع پرونده های خاص مانند MP4 ، ogv ، WebM را وارد کنید</p>
+                                <div class="buttons text-left">
+                                    <button type="button" class="btn btn-danger">انتخاب ویدیو</button>
+                                    <button type="submit" class="btn btn-success">آپلود ویدیو</button>
+                                </div>
+                            </div>
+                            <div class="metaDiscription">
+                                <span class="titleImage">
+                                    <img src="./img/description.jpg" alt="descriptionTitle">
+                                </span>
+                                <label>متا</label>
+                                <hr>
+                                <div class="freeTransportation">
+                                    <label for="">عنوان متا</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fixedCost">
+                                    <label for="">توضیحات متا</label>
+                                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+            <aside>
+                <ul>
+                    <li id="profile">
+                        <div class="flex-item-left">
+                            <a href="" class="border-bottom-0">پنل مدیریت</a>
+                        </div>
+                        <div class="flex-item-right">
+                            <img src="./img/AdminLTELogo.gif" alt="avatar">                
+                        </div>
+                    </li>
+                    <li id="bazar">
+                        <img src="./img/taftaco.png" alt="logo">
+                        <a href="">بازار آنلاین ایران</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <span class="asideLinksLogo">
+                            <img src="./img/speedometer.png" alt="speedometer">
+                        </span>
+                        <a href="">صفحه اصلی</a>
+                    </li>
+                    <!-- Sidebar Dropdown Link -->
+                    <li>
+                        <div class="dropdown" id="mproduct">
+                            <span class="asideLinksLogo">
+                                <img src="./img/sidebar-product.png" alt="product">
+                            </span>
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">مدیریت محصولات
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" onclick="addNewProductPage()">افزودن محصول جدید</a></li>
+                                <li><a href="#">لیست محصولات</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+
+    <!-- STRUCTURE FOR RESPONSIVE LOW THAN 992px SIZE OF SCREEN -->
+    <div id="responsiveStructure">
+        <div id="responsiveNavbar">
+            <div class="row" style="display: contents;">
+                <div class="col-sm-3 col-xs-3" id="resNavLeft">
+                    <input type="search" name="" class="searchInput" placeholder="جستجو">
+                    <button class="searchButton">
+                        <img src="./img/search.png" alt="search-icon">
+                    </button>
+                </div>
+                <div class="col-sm-3 col-xs-3" id="navWarnings">
+                    <div class="dropdown navDrop">
+                        <button class="btn btn-primary dropdown-toggle" id="navNotif" type="button" data-toggle="dropdown">
+                            <span class="badge badge-danger">۱۵</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <p>۱۵ نوتیفیکیشن</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۳ دقیقه</p>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۴ پیام جدید</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۱۲ ساعت</p>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۸ درخواست دوستی</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۲ روز</p>
+                                        </div>
+                                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <p>۳ گزارش جدید</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    مشاهده همه نوتیفیکیشن
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" id="navTime" type="button" data-toggle="dropdown">
+                            <span class="badge badge-warning">۳</span>
+                        </button>
+                        <ul class="dropdown-menu" id="navList">
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/avatar.png" alt="avatar">
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <p>user name</p>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/black-star.png" alt="black-star">
+                                        </div>
+                                    </div>
+                                    <p>۴ ساعت قبل</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/avatar2.png" alt="avatar">
+                                        </div>
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <p>user name</p>
+                                        </div>
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/star-gold-removebg-preview.png" alt="gold-star">
+                                        </div>
+                                    </div>
+                                    <p>۴ ساعت قبل</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/avatar3.png" alt="avatar">
+                                        </div>
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <p>user name</p>
+                                        </div>
+                                        <div class="col-xl-4 col-lg- col-md-4 col-sm-4 col-xs-4">
+                                            <img src="./img/blue-star.png" alt="blue-star">
+                                        </div>
+                                    </div>
+                                    <p>۴ ساعت قبل</p>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <p>مشاهده همه پیام ها</p>
+                                </a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-xs-4" id="navLinks">
+                    <a href="">خانه</a>
+                    <a href="">تماس</a>
+                </div>
+                <div class="col-sm-2 col-xs-2" id="resNavRight">
+                    <img src="./img/burger-menu.png" alt="burger-menu" id="burgerMenuIcon">
+                </div>
+            </div>
+        </div>
+
+        <div id="responsiveMain">
+            <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="title">
+                                <span class="titleImage">
+                                    <img src="./img/product.png" alt="productTitle">
+                                </span>
+                                <label>عنوان محصول</label>
+                                <input type="text">
+                            </div>
+                            <div class="category">
+                                <div class="form-group">
+                                    <span class="titleImage">
+                                        <img src="./img/category.png" alt="categoryTitle">
+                                    </span>
+                                    <label for="category">انتخاب دسته بندی</label>
+                                    <select class="form-control" id="category">
+                                        <option>انتخاب دسته بندی</option>
+                                        <option>دسته بندی 1</option>
+                                        <option>دسته بندی 2</option>
+                                        <option>دسته بندی 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="brands">
+                                <span class="titleImage">
+                                    <img src="./img/brand.png" alt="brandTitle">
+                                </span>
+                                <label for="brands">انتخاب برند</label>
+                                <div class="form-group">
+                                    <select class="form-control" id="brands">
+                                        <option>انتخاب برند</option>
+                                        <option>برند 1</option>
+                                        <option>برند 2</option>
+                                        <option>برند 3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="weight">
+                                <span class="titleImage">
+                                    <img src="./img/weight.png" alt="weightTitle">
+                                </span>
+                                <label for="">وزن (گرم)</label>
+                                <input type="text" name="" id="">
+                            </div>
+                            <div class="enitity">
+                                <span class="titleImage">
+                                    <img src="./img/numbers.png" alt="entityTitle">
+                                </span>
+                                <label>موجودی انبار</label>
+                                <input type="text">
+                            </div>
+                            <div class="labels">
+                                <span class="titleImage">
+                                    <img src="./img/brand.png" alt="brandsTitle">
+                                </span>
+                                <label for="labels">برچسب ها</label>
+                                <input type="text" name="labels" id="">
+                            </div>
+                            <div class="returnProduct">
+                                <span>امکان بازگشت کالا</span>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="transportaionSets">
+                                <span class="titleImage">
+                                    <img src="./img/transportation.png" alt="transportationTitle">
+                                </span>
+                                <label>تنظیمات حمل و نقل</label>
+                                <hr>
+                                <div class="freeTransportation">
+                                    <span>حمل و نقل رایگان</span>
+                                    <label class="switch">
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="fixedCost">
+                                    <span id="fixedLabel">کرایه ثابت</span>
+                                    <label class="switch">
+                                        <input type="checkbox" id="fixedCostInput">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+                                <div class="transportaionCost">
+                                    <label for="transportaionCost">هزینه حمل و نقل</label>
+                                    <input type="text" name="tranportaionCost" id="">
+                                </div>
+                            </div>
+                            <div class="lowEntityWarning">
+                                <span class="titleImage">
+                                    <img src="./img/warning.png" alt="warningTitle">
+                                </span>
+                                <label>اخطار کم بودن موجودی</label>
+                                <hr>
+                                <div class="numbers">
+                                    <label for="">تعداد</label>
+                                    <input type="number">
+                                </div>
+                            </div>
+                            <div class="videoLink">
+                                <span class="titleImage">
+                                    <img src="./img/video.jpg" alt="videoTitle">
+                                </span>
+                                <label>لینک ویدیو</label>
+                                <input type="text" name="" id="">
+                                <p>لینک یوتیوب یا ویمو، آپارات و یا انواع پرونده های خاص مانند MP4 ، ogv ، WebM را وارد کنید</p>
+                                <div class="buttons text-left">
+                                    <button type="button" class="btn btn-danger">انتخاب ویدیو</button>
+                                    <button type="submit" class="btn btn-success">آپلود ویدیو</button>
+                                </div>
+                            </div>
+                            <div class="metaDiscription">
+                                <span class="titleImage">
+                                    <img src="./img/description.jpg" alt="descriptionTitle">
+                                </span>
+                                <label>متا</label>
+                                <hr>
+                                <div class="freeTransportation">
+                                    <label for="">عنوان متا</label>
+                                    <input type="text">
+                                </div>
+                                <div class="fixedCost">
+                                    <label for="">توضیحات متا</label>
+                                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="productImages">
+                                <span class="titleImage">
+                                    <img src="./img/image.png" alt="imageTitle">
+                                </span>
+                                <label>تصاویر کالا</label>
+                                <hr>
+                                <p>گالری تصاویر (اندازه تصاویر زیر 512*512 نباشد)</p>
+                                <input type="file" id="upload" hidden>
+                                <label for="upload">
+                                    <img src="./img/image-upload.jpg" alt="imageUpload">
+                                </label>
+                                <div class="text-left">
+                                    <button type="buuton" class="btn btn-success">آپلود تصویر</button>
+                                </div>
+                            </div>
+                            <div class="productPrice">
+                                <span class="titleImage">
+                                    <img src="./img/price.png" alt="priceTitle">
+                                </span>
+                                <label>قیمت محصول + موجودی انبار فروشنده</label>
+                                <hr>
+                                <div class="price">
+                                    <label for="">قیمت</label>
+                                    <input type="text" placeholder="واحد با تومان">
+                                </div>
+                                <div class="entity">
+                                    <label for="">موجودی انبار</label>
+                                    <input type="text" name="" id="" placeholder="تعداد کالا در انبار">
+                                </div>
+                                <div class="maxHistorySale">
+                                    <label for="">حداکثر تاریخ برای تخفیف</label>
+                                    <input type="text" name="" id="" placeholder="اعتبار تخفیف">
+                                </div>
+                                <div class="sale">
+                                    <label for="">تخفیف</label>
+                                    <input type="text" name="" id="" placeholder="اعتبار مبلغ به عدد یا درصد">
+                                </div>
+                            </div>
+                            <div class="productAttributes">
+                                <span class="titleImage">
+                                    <img src="./img/attrs.png" alt="attrsTitle">
+                                </span>
+                                <label>ویژگی های کالا</label>
+                                <hr>
+                                <div class="attribute">
+                                    <label for="">ویژگی</label>
+                                    <select class="form-control" id="">
+                                        <option>انتخاب رنگ</option>
+                                        <option>رنگ 1</option>
+                                        <option>رنگ 2</option>
+                                        <option>رنگ 3</option>
+                                    </select>
+                                </div>
+                                <div class="color">
+                                    <label for="">رنگ</label>
+                                    <select class="form-control" id="">
+                                        <option>انتخاب ویژگی محصول</option>
+                                        <option>ویژگی 1</option>
+                                        <option>ویژگی 2</option>
+                                        <option>ویژگی 3</option>
+                                    </select>
+                                </div>
+                                <div class="otherAttrs">
+                                    <label for="">سایر ویژگی (سایر)</label>
+                                    <select class="form-control" id="">
+                                        <option>درج ویژگی</option>
+                                        <option>ویژگی 1</option>
+                                        <option>ویژگی 2</option>
+                                        <option>ویژگی 3</option>
+                                    </select>
+                                </div>
+                                <p>ویژگی های این محصول را انتخاب کنید و سپس مقادیر ورودی هر ویژگی را وارد کنید</p>
+                            </div>
+                            <div class="mainButtons">
+                                <button class="btn btn-success" type="submit">تایید و انتشار</button>
+                                <button class="btn btn-danger" type="submit">پیش نویس</button>
+                            </div>
+                        </div>
+            </div>
+        </div>
+        <div id="responsiveSidebar">
+                <div id="sidebarHeader">
+                    <a href="">پنل مدیریت</a>
+                </div>
+                <ul id="sideLinks">
+                    <li><a href="">بازار آنلاین ایران</a></li>
+                    <li><a href="">صفحه اصلی</a></li>
+                    <li><a href="" id="resAddProductLink">افزودن محصول جدید</a></li>
+                    <li><a href="">لیست محصولات</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

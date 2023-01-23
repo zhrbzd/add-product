@@ -1,0 +1,565 @@
+@font-face{
+    font-family: vazir;
+    src: url(../fonts/Vazir.ttf),
+         url(../fonts/Vazir.woff),
+         url(../fonts/Vazir.woff2);
+}
+body{
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    font-family: vazir;
+    font-size: 16px;
+    overflow-x: hidden;
+    background: #f1f1f1;
+}
+#responsiveMain{display: none;}
+#responsiveNavbar,
+#responsiveSidebar,
+#responsiveMain{
+    display: none;
+}
+a{
+    text-decoration: none;
+    background: none;
+    border: none;
+    color: #c5c5c5;
+    font-size: 14px;
+}
+.col-lg-3, .col-lg-9{padding: 0 !important;}
+a:hover{
+    text-decoration: none;
+    color: white;
+    border: none;
+}
+.btn-primary :focus{box-sizing: none;}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+li img {
+    width: 4rem;
+    margin-left: .5rem;
+}
+/* Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 58px;
+    height: 19px;
+}
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 3px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #28a745;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #28a745;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* Navigation Styles */
+#navRightBox{
+    text-align: right;
+    padding-right: 1rem;
+}
+#navRightBox ul{
+    display: flex;
+}
+nav{
+    background: white;
+    padding: 12px 6rem 12px;
+    position: fixed;
+    width: 77%;
+    z-index: 1;
+    box-shadow: 1px 1px 11px #a7a7a7;
+    flex: 89%;
+}
+nav a{
+    font-size: 16px;
+    color: #8a8a8a;
+    position: absolute;
+    top: 6px;
+}
+nav img{
+    width: 30px;
+    border-radius: 50%;
+}
+.searchInput{
+    border: none;
+    padding: 7px 15px 8px;
+    font-size: 12px;
+    background: #f1f1f1;
+    width: 175px;
+    outline: none;
+}
+.searchButton{
+    border: none;
+    background: #f1f1f1;
+    width: 32px;
+    height: 32px;
+    position: absolute
+}
+.searchButton > img{
+    width: 100%;
+    vertical-align: -webkit-baseline-middle;
+}
+#navLeftBox{
+    text-align: left;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-left: 1rem;
+}
+#navLeftBox button{
+    outline: none;
+    box-shadow: none;
+}
+nav .list-group-item{font-size: 12px;}
+nav .list-group{
+    width: 220px;
+    text-align: center;
+    font-size: 12px;
+}
+#navList{text-align: right;}
+#navList img{width: 20px;}
+#navRightBox ul li {
+    margin-right: 6rem;
+}
+#navRightBox ul li a{
+    font-size: 12px;
+    color: #8a8a8a;
+    position: absolute;
+    top: 8px;
+}
+
+#navTime img, #navNotif img{width: 20px;}
+.navDrop .badge-danger{
+    color: white;
+    background: red;
+    font-size: 10px;
+}
+#navTime .badge-warning{
+    color: black;
+    background: yellow;
+    font-size: 10px;
+}
+#navRightBox ul li:first-child{
+    margin-right: 0;
+}
+/* Sidebar Styles */
+aside {
+    background-color: #3a3a3a;
+    color: #838383;
+    padding-left: 0px;
+    width: 26%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    box-shadow: -3px 0 10px #757575;
+}
+aside hr{
+    font-weight: 100;
+    width: 83%;
+    color: #464646;
+    margin: 0 18px 1.5rem 0;
+    border: 0;
+    border-bottom: 1px solid #6b6b6b;
+}
+aside .asideLinksLogo img{
+    width: 30px;
+}
+#profile img{
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-left: 3rem;
+    box-shadow: 0 4px 6px #535353;
+    border-radius: 50%;
+}
+#profile{
+    font-size: 16px;
+    background: #28a745;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+#profile a{color: white;}
+#profile:hover{
+    background: #24913d;
+    cursor: pointer;
+}
+#profile .flex-item-left{flex: 80%;}
+#profile .flex-item-right{flex: 20%;}
+#profile a{
+    position: absolute;
+    top: 18px;
+}
+aside li{
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    padding-right: 2rem;
+}
+aside :last-child{padding-top: 0;}
+#bazar{
+    padding-bottom: 11px;
+    position: relative;
+}
+#bazar a{
+    position: absolute;
+    right: 91px;
+    top: 20px;
+    border: none;
+    font-size: 14px;
+}
+#bazar a:hover{
+    color: white;
+}
+aside .caret{margin-right: 5px;}
+aside .btn-primary:hover, .btn-primary {
+    color: #c5c5c5;
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+aside .btn-primary:hover{color: white;}
+#mproduct button{
+    padding-right: 0;
+    outline: none;
+    box-shadow: none;
+}
+aside .dropdown-menu{
+    right: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+aside .dropdown-menu li{padding: 1.5rem 0rem;}
+aside .dropdown-menu :last-child{
+    padding-bottom: 0;
+    padding-top: 0;
+}
+aside .dropdown-menu > li > a{
+    color: #dddddd;
+    padding: 0;
+    font-size: 13px;
+}
+aside .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* Main */
+main{
+    position: relative;
+    font-size: 14px;
+    padding: 3rem 6rem 3rem 4rem;
+    margin-top: 52px;
+}
+main input[type = text],
+main input[type=number]{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 7px 8px;
+    margin: 6px 0 15px;
+    border-radius: 0;
+}
+main textarea{
+    border: 1px solid #c5c5c5;
+    width: 100%;
+}
+main .form-control{
+    box-shadow: none;
+}
+main hr{
+    border-color: #d8d8d8;
+    width: 100%;
+    margin: 1rem 0 1.5rem;
+}
+.category select,
+.brands select{
+    border: none;
+}
+.category select:focus,
+.brands select:focus{
+    border: none;
+    box-shadow: none;
+}
+.attribute select:focus,
+.color select:focus,
+.otherAttrs select:focus{
+    box-shadow: none;
+    border: 1px solid #c5c5c5;
+}
+.attribute select,
+.otherAttrs select,
+.color select{
+    border: 1px solid #c5c5c5;
+    padding: 4px 8px 0px;
+    margin-bottom: 2rem;
+}
+.productImages input{
+    width: 100%;
+    height: 151px;
+}
+#upload{
+    display: none;
+}
+#upload:focus{
+    outline: none;
+}
+.productImages img{
+    width: 100%;
+    height: 100%;
+    margin: 1rem 0;
+}
+.productImages img:hover{cursor: pointer;}
+.transportaionSets,
+.productImages,
+.productPrice,
+.productAttributes,
+.lowEntityWarning,
+.videoLink,
+.metaDiscription{
+    background: #ffffff;
+    padding: 23px;
+    margin-top: 3rem;
+}
+.transportaionSets input[type=text],
+.transportaionSets input[type=number],
+.productImages input[type=text],
+.productImages input[type=number],
+.productPrice input[type=text],
+.productPrice input[type=number],
+.productAttributes input[type=text],
+.productAttributes input[type=number],
+.lowEntityWarning input[type=text],
+.lowEntityWarning input[type=number],
+.videoLink input[type=text],
+.videoLink input[type=number],
+.metaDiscription input[type=text],
+.metaDiscription input[type=number]{
+    border: 1px solid #c5c5c5;
+    width: 100%;
+}
+.mainButtons{
+    text-align: center;
+}
+.mainButtons button{
+    margin: 0 1rem;
+}
+.returnProduct{
+    margin-top: 1rem;
+}
+.returnProduct span{
+    margin-left: 22px;
+    font-weight: 700; 
+}
+.transportaionSets span,
+.productImages span,
+.productPrice span,
+.productAttributes span,
+.lowEntityWarning span,
+.videoLink span,
+.metaDiscription span{
+    font-weight: 700;
+    margin-left: 10px;
+}
+.transportaionSets .switch,
+.productImages .switch,
+.productPrice .switch,
+.productAttributes .switch,
+.lowEntityWarning .switch,
+.videoLink .switch,
+.metaDiscription .switch{
+    width: 47px;
+}
+.freeTransportation,
+.fixedPrice{
+    margin-bottom: 2rem;
+}
+.productImages button{
+    text-align: left;
+}
+.transportaionCost{
+    margin-top: 2.5rem;
+    display: none;
+}
+.titleImage img{
+    width: 20px;
+    display: inline;
+    margin-left: 3px;
+}
+
+@media (max-width: 776px){
+    #navRightBox ul li {
+        margin-right: 0;
+    }
+    #searchInput{
+        width: 60%;
+    }
+    #navLeftBox{
+        text-align: center;
+        padding-left: 0;
+    }
+    aside{width:55%}
+    nav{
+        width: 100%;
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    main{
+        margin-top: 0;
+        padding: 0;
+    }
+    /* RESPONSIVE NAVIGATION AND SIDEBAR */
+    #responsiveMain{display: none;}
+    #responsiveSidebar{display: none;}
+    .searchInput{width: 66%;}
+    #responsiveStructure{
+        overflow-x: hidden;
+    }
+    #responsiveNavbar,
+    #responsiveSidebar,
+    #responsiveMain{
+        display: block;
+    }
+    #responsiveNavbar{
+        padding: 1rem 1rem 1rem 3rem;
+        background: white;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: row-reverse;
+        position: fixed;
+    }
+    #responsiveNavbar a{
+        font-size: 12px;
+        color: black;
+    }
+        #resNavRIght{position: relative;}
+        #resNavRight img{
+            width:25px;
+            position: absolute;
+            top: 5px;
+        }
+        #resNavLeft{
+            text-align: left;
+            margin-left: 2rem;
+        }
+            #navWarnings{
+                display: flex;
+            }
+                #navWarnings button{
+                    padding-right: 0;
+                    padding-left: 16px;
+                }
+            #navLinks{
+                display: flex;
+                position: relative;
+            }
+            #navLinks a{
+                flex: 50%;
+                margin-top: 8px;
+            }
+    #responsiveSidebar{
+        background-color: #3a3a3a;
+        width: 200px;
+        height: 100vh;
+        z-index: 100;
+        position: absolute;
+        top: 55px;
+    }
+    #responsiveSidebar li{
+        padding: 1.5rem 0 0 0;
+    }
+    #responsiveSidebar a{
+        font-size: 12px;
+        color: white;
+        padding: 0 1.5rem;
+        font-weight: 400;
+    }
+        #sidebarHeader{
+            background: #24913d;
+            padding: 1rem 0 1rem 1rem;
+        }
+    #responsiveMain{
+        font-size: 12px;
+        margin-top: 6rem;
+    }
+    #responsiveMain .title,
+    #responsiveMain .category,
+    #responsiveMain .brands,
+    #responsiveMain .weight,
+    #responsiveMain .enitity,
+    #responsiveMain .labels,
+    #responsiveMain .returnProduct,
+    #responsiveMain .transportaionSets,
+    #responsiveMain .lowEntityWarning,
+    #responsiveMain .videoLink,
+    #responsiveMain .metaDiscription,
+    #responsiveMain .productImages,
+    #responsiveMain .productPrice,
+    #responsiveMain .productAttributes{
+        background: white;
+        padding: 1rem;
+        margin: 1rem;
+    }
+    #responsiveMain select{
+        border: 1px solid #ccc;
+    }
+    #responsiveMain input[type=text]{
+        display: block;
+        width: 100%;
+        border: none;
+        border: 1px solid #bcbcbc;
+        padding: 5px;
+        margin: 2rem 0 1rem;
+    }
+    #responsiveMain textarea{
+        width: 100%;
+    }
+    /* #responsiveSidebar{display: none;}
+    #responsiveMain{display: none;} */
+}
