@@ -6,7 +6,7 @@ function addNewProductPage(){
 }
 
 // When click on checking fixed transportation show transportation cost
-var transprtationCost = document.querySelector(".transportaionCost")
+let transprtationCost = document.querySelector(".transportaionCost")
 let fixedCostInputox = document.querySelector("#fixedCostInput");
 fixedCostInput.checked = false;
 fixedCostInput.onchange = function() {
